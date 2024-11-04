@@ -1,9 +1,9 @@
 aks_clusters = [
  # Add configurations for remaining clusters
   {
-    name                      = "cluster1"
-    resource_group_name       = "rg-cluster1"
-    custom_location_name      = "custom-location1"
+    name                      = "cluster-aksarc-mariner-nuc"
+    resource_group_name       = "rg-aksarc-mariner-nuc"
+    custom_location_name      = "cl-aksarc-mariner-nuc"
     logical_network_name      = "logical-network1"
     keyvault_name             = "kv-cluster1"
     agent_pool_profiles       = {...} # specify profile details
@@ -12,9 +12,9 @@ aks_clusters = [
     rbac_admin_group_object_ids = ["group-id-1"]
   },
   {
-    name                      = "cluster2"
-    resource_group_name       = "rg-cluster2"
-    custom_location_name      = "custom-location2"
+    name                      = "cluster-aksarc-ubuntu-nuc"
+    resource_group_name       = "rg-aksarc-ubuntu-nuc"
+    custom_location_name      = "cl-aksarc-ubuntu-nuc"
     logical_network_name      = "logical-network2"
     keyvault_name             = "kv-cluster2"
     agent_pool_profiles       = {...}
@@ -23,9 +23,9 @@ aks_clusters = [
     rbac_admin_group_object_ids = ["group-id-2"]
   },
   {
-    name                      = "cluster3"
-    resource_group_name       = "rg-cluster3"
-    custom_location_name      = "custom-location3"
+    name                      = "cluster-aksarc-WindowsIOT-nuc"
+    resource_group_name       = "rg-aksarc-windowsiot-nuc"
+    custom_location_name      = "cl-aksarc-windowsiot-nuc"
     logical_network_name      = "logical-network3"
     keyvault_name             = "kv-cluster3"
     agent_pool_profiles       = {...} # specify profile details
