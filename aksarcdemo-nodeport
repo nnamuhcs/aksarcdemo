@@ -3,10 +3,11 @@ kind: Service
 metadata:
   name: aksarcdemo
 spec:
-  type: LoadBalancer
+  type: NodePort
   ports:
   - port: 80
     targetPort: 8080
+    nodePort: 30007 # Optional: You can remove this line if you want Kubernetes to automatically assign a port
   selector:
     app: aksarcdemo
 ---
